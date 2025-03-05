@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Ydrian Yayen's Portfolio</title>
+    <script src="https://kit.fontawesome.com/e8ef3c2d9c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="tab-header">
+            <button class="tab-button active" data-tab="tab1">About</button>
+            <button class="tab-button active" data-tab="tab2">Resume</button>
+            <button class="tab-button active" data-tab="tab3">Portfolio</button>
+            <button class="tab-button active" data-tab="tab4">Contact</button>
+        </div>
+    </header>
+    <section>
+        <div class="sidebar">
+            <img src="assets/img/yd.jpg" alt="">
+            <h2>Ydrian Marcil D. Yayen</h2>
+            <div class="role">
+                <p><strong>Frontend Developer</strong></p>
+            </div>
+            <hr>
+            <div class="contact-info">
+                <i class="fa-solid fa-at fa-xl" style="color: #7d00fa;"></i>
+                <div class="info">
+                    <p><strong>Email</strong></p>
+                    <p>yayenydrian@gmail.com</p>
+                </div>
+                <i class="fa-solid fa-phone fa-xl" style="color: #7d00fa;"></i>
+                <div class="info">
+                    <p><strong>Phone</strong></p>
+                    <p> +639461478420</p>
+                </div>
+                <i class="fa-solid fa-calendar fa-xl" style="color: #7d00fa;"></i>
+                <div class="info">
+                    <p><strong>Birthday</strong> </p>
+                    <p>May 18,2002</p>
+                </div>
+                <i class="fa-solid fa-map-marker fa-xl" style="color: #7d00fa;"></i>
+                <div class="info">
+                    <p><strong>Location</strong></p>
+                    <p>Puerto Princesa, Palawan, Philippines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="tab-container">
+            <div class="tab-content">
+                <div class="tab-pane active" id="tab1">
+                    <div class="page-title">
+                        <h2>About Me</h2>
+                        <hr>
+                    </div>
+                    <div class="about">
+                        <p><span><strong>Hi, I'm Ydrian</strong>, a 2nd-year Computer Science Student at Fullbright College. I've always been full of curiosity and drive to solve real-world problems by using technology which led me to persue a career in this field. Over the past year, I've developed proficiency in programming languages like Python, and I've also explored web development technologies such as HTML, CSS, and JavaScript.</span></p>
+                        <p>I've worked on several academic projects, including a real-state website, game system, and a dictionary website, which helped me strengthen my problem-solving and teamwork skill. Additionaly, I've assisted multiple teams in coding, where I learned to multi-task and work under pressure. </p>
+                        <p>Outside of academics, I enjoy learning about general knowledge and staying updated on the latest tech trends. I'm eager to gain more practical experience through internships and collaborative projects, and I'm excited to continue growing as a developer while making a meaningful impact in the industry.</p>
+                    </div>
+                    <h2 style="margin-top: 30px;">What I do</h2>
+                    <div class="box">
+                        <div class="work">
+                            <img src="assets/img/prog.jpg" alt="">
+                            <div class="layer">
+                                <h3>Programming</h3>
+                                <p>Python, Visual Basic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" id="box2">
+                        <div class="work">
+                            <img src="assets/img/mma.jpg">
+                            <div class="layer">
+                                <h3>Multimedia Editing</h3>
+                                <p>Photoshop, Premiere</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" id="box3">
+                        <div class="work">
+                            <img src="assets/img/dga.jpg">
+                            <div class="layer">
+                                <h3>Digital Arts</h3>
+                                <p>Vexel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box" id="box4">
+                        <div class="work">
+                            <img src="assets/img/wd.jpg">
+                            <div class="layer">
+                                <h3>Web Design</h3>
+                                <p>HTML, CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane" id="tab2">
+                    <div class="page-title">
+                        <h2>Resume</h2>
+                        <hr>
+                    </div>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <div class="progress-bar">
+                                <div class="html"><span>86%</span></div>
+                            </div>
+                            <li><span>CSS</span></li>
+                            <div class="progress-bar">
+                                <div class="css"><span>80%</span></div>
+                            </div>
+                            <li><span>Photoshop</span></li>
+                            <div class="progress-bar">
+                                <div class="photoshop"><span>90%</span></div>
+                            </div>
+                            <li><span>Python</span></li>
+                            <div class="progress-bar">
+                                <div class="python"><span>93%</span></div>
+                            </div>
+                            <li><span>Premiere</span></li>
+                            <div class="progress-bar">
+                                <div class="premiere"><span>88%</span></div>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <div class="timeline">
+                            <div class="timebox mid-box">
+                                <h2>Education</h2>
+                            </div>
+                            <div class="timebox left-box">
+                                <img src="assets/img/cap.png" alt="">
+                                <div class="textbox">
+                                    <h3>Fullbright College Inc.</h3>
+                                    <small>2023 - Present</small>
+                                    <p>Bachelor of Science in Computer Science</p>
+                                    <span class="right-box-arrow"></span>
+                                    <div class="layer">
+                                        <img src="assets/img/FBC.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timebox right-box">
+                                <img src="assets/img/cap.png" alt="">
+                                <div class="textbox">
+                                    <h3>Palawan National School</h3>
+                                    <small>2018 - 2020</small>
+                                    <p>Senior High School</p>
+                                    <span class="left-box-arrow"></span>
+                                    <div class="layer">
+                                        <img src="assets/img/PNS.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timebox left-box">
+                                <img src="assets/img/cap.png" alt="">
+                                <div class="textbox">
+                                    <h3>Tagaytay City Science National High School</h3>
+                                    <small>2015 - 2018</small>
+                                    <p>Grade 8</p>
+                                    <span class="right-box-arrow"></span>
+                                    <div class="layer">
+                                        <img src="assets/img/TCSNHS.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <div class="timeline2">
+                            <div class="timebox mid-box" style="text-align: center;">
+                                <h2>Experience</h2>
+                            </div>
+                            <div class="timebox left-box">
+                                <img src="assets/img/cap.png" alt="">
+                                <div class="textbox">
+                                    <h3>Event Coordinator</h3>
+                                    <small>2010 - Present</small>
+                                    <p>Volunteering</p>
+                                    <span class="right-box-arrow"></span>
+                                    <div class="layer">
+                                        <img src="assets/img/focolare.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timebox right-box">
+                                <img src="assets/img/cap.png" alt="">
+                                <div class="textbox">
+                                    <h3>A&R Assitant</h3>
+                                    <small>2022 - 2023</small>
+                                    <p>Local Bands</p>
+                                    <span class="left-box-arrow"></span>
+                                    <div class="layer">
+                                        <img src="assets/img/AR.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="timebox left-box">
+                                <img src="assets/img/cap.png" alt="">
+                                <div class="textbox">
+                                    <h3>Catering</h3>
+                                    <small>2018 - 2019</small>
+                                    <p>Food and Delivery Services</p>
+                                    <span class="right-box-arrow"></span>
+                                    <div class="layer">
+                                        <img src="assets/img/cater.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="tab3">
+                    <div class="page-title">
+                        <h2>Portfolio</h2>
+                        <hr>
+                    </div>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="assets/img/work-1.jpg">
+                            <div class="layer">
+                                <h3>Game Development</h3>
+                                <p>A basic arena turn-based figthing game.</p>
+                                <a href="#"><i class="fa-solid fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="assets/img/work-2.jpg">
+                            <div class="layer">
+                                <h3>Construction Website</h3>
+                                <p>A website made for a company.</p>
+                                <a href="#"><i class="fa-solid fa-external-link"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="assets/img/work-3.png">
+                            <div class="layer">
+                                <h3>Web Design</h3>
+                                <p>Resume Building</p>
+                                <a href="#"><i class="fa-solid fa-external-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+
+                <div class="tab-pane" id="tab4">
+                    <div class="page-title">
+                        <h2>Contact Me</h2>
+                        <hr>
+                    </div>
+                    <div class="row">
+                        <div class="contact-left">
+                            <p><i class="fa fa-paper-plane"></i> yayenydrian@gmail.com</p>
+                            <p><i class="fa fa-phone-square-alt"></i> 09461478420</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/bisprinniMr.Right"><i class="fab fa fa-facebook"></i></a>
+                                <a href="https://x.com/YdrianYayen"><i class="fab fa fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/ydzz_m"><i class="fab fa fa-instagram"></i></a>
+                                <a href="https://m.me/bisprinniMr.Right"><i class="fab fa fa-facebook-messenger"></i></a>
+                            </div>
+                            <a href="assets/Yd CV Resume.pdf" download class="btn btn2">Download CV</a>
+                        </div>
+                        <div class="contact-right">
+                            <form action="https://api.web3forms.com/submit" method="POST">
+                                <input type="hidden" name="access_key" value="ef3fe2d5-0102-48e9-a50c-71b7502480f0">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>    
+
+    <script>
+        const tabButtons = document.querySelectorAll('.tab-button')
+        const tabPanes = document.querySelectorAll('.tab-pane')
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.dataset.tab
+
+                tabButtons.forEach(btn => btn.classList.remove('active'))
+                tabPanes.forEach(pane => pane.classList.remove('active'))
+
+                button.classList.add('active')
+                document.getElementById(targetTab).classList.add('active')
+            })
+        })
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
