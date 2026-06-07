@@ -1380,11 +1380,11 @@ main {
 
   .sidebar {
     position: sticky;
-    top: 15px;
-    align-self: flex-start;
+    top: 60px;
     max-height: max-content;
+    height: 100%;
     margin-bottom: 0;
-    padding-top: 0;
+    padding-top: 60px;
     z-index: 1;
   }
 
