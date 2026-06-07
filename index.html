@@ -1,322 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Ydrian Yayen's Portfolio</title>
-    <script src="https://kit.fontawesome.com/e8ef3c2d9c.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ydrian's Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <div class="tab-header">
-            <button class="tab-button active" data-tab="tab1">About</button>
-            <button class="tab-button active" data-tab="tab2">Resume</button>
-            <button class="tab-button active" data-tab="tab3">Portfolio</button>
-            <button class="tab-button active" data-tab="tab4">Contact</button>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Ydrian Marcil D. Yayen" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ydrian Marcil D. Yayen">Ydrian Marcil D. Yayen</h1>
+
+          <p class="title">Creative Freelancer</p>
         </div>
-    </header>
-    <section>
-        <div class="sidebar">
-            <img src="assets/img/yd.jpg" alt="">
-            <h2>Ydrian Marcil D. Yayen</h2>
-            <div class="role">
-                <p><strong>Frontend Developer</strong></p>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
-            <hr>
+
             <div class="contact-info">
-                <i class="fa-solid fa-at fa-xl" style="color: #7d00fa;"></i>
-                <div class="info">
-                    <p><strong>Email</strong></p>
-                    <p>yayenydrian@gmail.com</p>
-                </div>
-                <i class="fa-solid fa-phone fa-xl" style="color: #7d00fa;"></i>
-                <div class="info">
-                    <p><strong>Phone</strong></p>
-                    <p> +639461478420</p>
-                </div>
-                <i class="fa-solid fa-calendar fa-xl" style="color: #7d00fa;"></i>
-                <div class="info">
-                    <p><strong>Birthday</strong> </p>
-                    <p>May 18,2002</p>
-                </div>
-                <i class="fa-solid fa-map-marker fa-xl" style="color: #7d00fa;"></i>
-                <div class="info">
-                    <p><strong>Location</strong></p>
-                    <p>Puerto Princesa, Palawan, Philippines</p>
-                </div>
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:yayenydrian@gmail.com" class="contact-link">yayenydrian@gmail.com</a>
             </div>
-        </div>
-    </section>
 
-    <section>
-        <div class="tab-container">
-            <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
-                    <div class="page-title">
-                        <h2>About Me</h2>
-                        <hr>
-                    </div>
-                    <div class="about">
-                        <p><span><strong>Hi, I'm Ydrian</strong>, a 2nd-year Computer Science Student at Fullbright College. I've always been curious and driven to solve real-world problems using technology, which led me to pursue a career in this field. Over the past year, I've developed proficiency in programming languages like Python, and I've also explored web development technologies such as HTML, CSS, and JavaScript.</span></p>
-                        <p>I've worked on several academic projects, including a website for a construction company, a game system, and a dictionary website, which helped me strengthen my problem-solving and teamwork skills. Additionally, I've assisted multiple teams in coding, where I learned to multi-task and work under pressure. </p>
-                        <p>Outside academics, I enjoy learning about general knowledge and staying updated on the latest tech trends. I'm eager to gain more practical experience through internships and collaborative projects, and I'm excited to continue growing as a developer while making a meaningful impact in the industry.</p>
-                    </div>
-                    <h2 style="margin-top: 30px;">What I do</h2>
-                    <div class="box">
-                        <div class="work">
-                            <img src="assets/img/prog.jpg" alt="">
-                            <div class="layer">
-                                <h3>Programming</h3>
-                                <p>Python, Visual Basic</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box" id="box2">
-                        <div class="work">
-                            <img src="assets/img/mma.jpg">
-                            <div class="layer">
-                                <h3>Multimedia Editing</h3>
-                                <p>Photoshop, Premiere</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box" id="box3">
-                        <div class="work">
-                            <img src="assets/img/dga.jpg">
-                            <div class="layer">
-                                <h3>Digital Arts</h3>
-                                <p>Vexel</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box" id="box4">
-                        <div class="work">
-                            <img src="assets/img/wd.jpg">
-                            <div class="layer">
-                                <h3>Web Design</h3>
-                                <p>HTML, CSS</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          </li>
 
-                <div class="tab-pane" id="tab2">
-                    <div class="page-title">
-                        <h2>Resume</h2>
-                        <hr>
-                    </div>
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                        <p class="tab-links" onclick="opentab('education')">Education</p>
-                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                    </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>HTML</span></li>
-                            <div class="progress-bar">
-                                <div class="html"><span>86%</span></div>
-                            </div>
-                            <li><span>CSS</span></li>
-                            <div class="progress-bar">
-                                <div class="css"><span>80%</span></div>
-                            </div>
-                            <li><span>Photoshop</span></li>
-                            <div class="progress-bar">
-                                <div class="photoshop"><span>90%</span></div>
-                            </div>
-                            <li><span>Python</span></li>
-                            <div class="progress-bar">
-                                <div class="python"><span>93%</span></div>
-                            </div>
-                            <li><span>Premiere</span></li>
-                            <div class="progress-bar">
-                                <div class="premiere"><span>88%</span></div>
-                            </div>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <div class="timeline">
-                            <div class="timebox mid-box">
-                                <h2>Education</h2>
-                            </div>
-                            <div class="timebox left-box">
-                                <img src="assets/img/cap.png" alt="">
-                                <div class="textbox">
-                                    <h3>Fullbright College Inc.</h3>
-                                    <small>2023 - Present</small>
-                                    <p>Bachelor of Science in Computer Science</p>
-                                    <span class="right-box-arrow"></span>
-                                    <div class="layer">
-                                        <img src="assets/img/FBC.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timebox right-box">
-                                <img src="assets/img/cap.png" alt="">
-                                <div class="textbox">
-                                    <h3>Palawan National School</h3>
-                                    <small>2018 - 2020</small>
-                                    <p>Senior High School</p>
-                                    <span class="left-box-arrow"></span>
-                                    <div class="layer">
-                                        <img src="assets/img/PNS.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timebox left-box">
-                                <img src="assets/img/cap.png" alt="">
-                                <div class="textbox">
-                                    <h3>Tagaytay City Science National High School</h3>
-                                    <small>2015 - 2018</small>
-                                    <p>Junior High School</p>
-                                    <span class="right-box-arrow"></span>
-                                    <div class="layer">
-                                        <img src="assets/img/TCSNHS.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <div class="timeline2">
-                            <div class="timebox mid-box" style="text-align: center;">
-                                <h2>Experience</h2>
-                            </div>
-                            <div class="timebox left-box">
-                                <img src="assets/img/cap.png" alt="">
-                                <div class="textbox">
-                                    <h3>Event Coordinator</h3>
-                                    <small>2010 - Present</small>
-                                    <p>Volunteering</p>
-                                    <span class="right-box-arrow"></span>
-                                    <div class="layer">
-                                        <img src="assets/img/focolare.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timebox right-box">
-                                <img src="assets/img/cap.png" alt="">
-                                <div class="textbox">
-                                    <h3>A&R Assitant</h3>
-                                    <small>2022 - 2023</small>
-                                    <p>Local Bands</p>
-                                    <span class="left-box-arrow"></span>
-                                    <div class="layer">
-                                        <img src="assets/img/AR.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="timebox left-box">
-                                <img src="assets/img/cap.png" alt="">
-                                <div class="textbox">
-                                    <h3>Catering</h3>
-                                    <small>2018 - 2019</small>
-                                    <p>Food and Delivery Services</p>
-                                    <span class="right-box-arrow"></span>
-                                    <div class="layer">
-                                        <img src="assets/img/cater.jpg" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane" id="tab3">
-                    <div class="page-title">
-                        <h2>Portfolio</h2>
-                        <hr>
-                    </div>
-                    <div class="work-list">
-                        <div class="work">
-                            <img src="assets/img/work-1.jpg">
-                            <div class="layer">
-                                <h3>Game Development</h3>
-                                <p>A basic arena turn-based fighting game.</p>
-                                <a href="#"><i class="fa-solid fa-external-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="assets/img/work-2.jpg">
-                            <div class="layer">
-                                <h3>Construction Website</h3>
-                                <p>A website made for a company.</p>
-                                <a href="#"><i class="fa-solid fa-external-link"></i></a>
-                            </div>
-                        </div>
-                        <div class="work">
-                            <img src="assets/img/work-3.png">
-                            <div class="layer">
-                                <h3>Web Design</h3>
-                                <p>Resume Building</p>
-                                <a href="#"><i class="fa-solid fa-external-link"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="btn">See More</a>
-                </div>
+          <li class="contact-item">
 
-                <div class="tab-pane" id="tab4">
-                    <div class="page-title">
-                        <h2>Contact Me</h2>
-                        <hr>
-                    </div>
-                    <div class="row">
-                        <div class="contact-left">
-                            <p><i class="fa fa-paper-plane"></i> yayenydrian@gmail.com</p>
-                            <p><i class="fa fa-phone-square-alt"></i> 09461478420</p>
-                            <div class="social-icons">
-                                <a href="https://www.facebook.com/bisprinniMr.Right"><i class="fab fa fa-facebook"></i></a>
-                                <a href="https://x.com/YdrianYayen"><i class="fab fa fa-twitter"></i></a>
-                                <a href="https://www.instagram.com/ydzz_m"><i class="fab fa fa-instagram"></i></a>
-                                <a href="https://m.me/bisprinniMr.Right"><i class="fab fa fa-facebook-messenger"></i></a>
-                            </div>
-                            <a href="assets/Yd CV Resume.pdf" download class="btn btn2">Download CV</a>
-                        </div>
-                        <div class="contact-right">
-                            <form action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value="ef3fe2d5-0102-48e9-a50c-71b7502480f0">
-                                <input type="text" name="Name" placeholder="Your Name" required>
-                                <input type="email" name="Email" placeholder="Your email" required>
-                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                                <button type="submit" class="btn btn2">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div>
-    </section>    
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
 
-    <script>
-        const tabButtons = document.querySelectorAll('.tab-button')
-        const tabPanes = document.querySelectorAll('.tab-pane')
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
 
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const targetTab = button.dataset.tab
+              <a href="tel:+12133522795" class="contact-link">+63 946 147 8420</a>
+            </div>
 
-                tabButtons.forEach(btn => btn.classList.remove('active'))
-                tabPanes.forEach(pane => pane.classList.remove('active'))
+          </li>
 
-                button.classList.add('active')
-                document.getElementById(targetTab).classList.add('active')
-            })
-        })
+          <li class="contact-item">
 
-        var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
-        }
-    </script>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">May 18, 2002</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Bancao-Bancao, Puerto Princesa City, Palawan</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Ydzz18" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="www.linkedin.com/in/ydrian-yayen-4482ba3a6" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/bisprinniMr.Right/" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/YdrianYayen" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/ydzz_m/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+           Hi, I’m Ydrian Marcil D. Yayen, currently pursuing my BS in Computer Science. My expertise spans Python programming, front‑end development, and creative editing, and I’ve already built a complete mall website system with three integrated platforms that showcase my ability to merge functionality with design.
+          </p>
+
+          <p>
+            Beyond academics, I’m fueled by curiosity and creativity—whether it’s exploring stories through books and movies, enjoying music on long drives, or diving into games. I thrive at the intersection of technology and creativity, always looking for ways to stand out and make an impact.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Media Editing</h4>
+
+                <p class="service-item-text">
+                  I make high-quality edits of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="profile">
+
+          <div class="content-card">
+            <h3 class="h3">Profile</h3>
+            <p class="timeline-text">
+              Strong organizational abilities with proven success managing multiple academic projects and volunteering events.
+              Dedicated, well-rounded professional team player, with excellent analytical skills and a demonstrated commitment
+              to providing outstanding customer service.
+            </p>
+          </div>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Sister Maria Carmela Brescia School, Tagaytay City</h4>
+
+              <span>2008 — 2015</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Tagaytay City Science National High School, Tagaytay City Science Class</h4>
+
+              <span>2015 — 2016</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Fullbright College Basic Education, Puerto Princesa City</h4>
+
+              <span>2016 — 2017</span>
+
+              <p class="timeline-text">
+                Graduated with honors; G8 Representative.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Palawan National School, Puerto Princesa City</h4>
+
+              <span>2017 — 2021</span>
+
+              <p class="timeline-text">
+                Student athlete; graduated with honors.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Employment</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Coordinator</h4>
+
+              <span>Focolare Movement, Tagaytay City | 2008 — 2022</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Caterer</h4>
+
+              <span>Chit Lim Muslad, Puerto Princesa City | Jan 2019 — Feb 2019</span>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">A&amp;R Assistant</h4>
+
+              <span>Local Bands, Puerto Princesa City | Present</span>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">React</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Photoshop</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Premiere</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d364.36124783372287!2d118.75689041993913!3d9.735343518611197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sph!4v1780839062176!5m2!1sen!2sph"
+              width="800" height="300" loading="lazy">
+            </iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
